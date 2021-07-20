@@ -87,7 +87,7 @@ const SectionThingsToKnow = ({onNext, quizActive, quizComplete, toggleQuiz, onQu
         </ul>
       </Box>
       <Box mx='auto'>
-        <Button inverted onClick={quizComplete ? onNext : toggleQuiz}>
+        <Button inverted onClick={quizComplete ? onNext : toggleQuiz} data-testid='onboarding-thingstoknow-button'>
           <FormattedMessage id="Onboarding.ThingsToKnow.Button" />
         </Button>
       </Box>
@@ -119,7 +119,7 @@ const SectionWhatIsOONI = ({onNext}) => (
       <FormattedMarkdownMessage id="Onboarding.WhatIsOONIProbe.Paragraph" />
     </Box>
     <Box mx='auto'>
-      <Button inverted onClick={onNext}>
+      <Button inverted onClick={onNext} data-testid='got-it-button'>
         <FormattedMessage id='Onboarding.WhatIsOONIProbe.GotIt' />
       </Button>
     </Box>
